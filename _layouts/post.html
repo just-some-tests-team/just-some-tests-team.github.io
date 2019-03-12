@@ -43,4 +43,18 @@ layout: default
   </div>
 
   {% include disqus.html %}
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+            <div id="gitalk-container"></div>
+            <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+            <script type="text/javascript">
+                var gitalk = new Gitalk({
+                    clientID: 'e61b1002ca151a71d237',
+                    clientSecret: 'cc2f1ac5dd020573edd6647baf3bee92503e0576',
+                    id: window.location.pathname,
+                    repo: 'just-some-tests-team.github.io',
+                    owner: 'just-some-tests-team',
+                    admin: 'just-some-tests'
+                })
+                gitalk.render('gitalk-container')
+            </script>
 </article>
